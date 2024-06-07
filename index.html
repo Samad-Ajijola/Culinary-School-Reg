@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Culinary School Class Booking System</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Culinary School Registration</div>
+      <form id="form" action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" id="fName" placeholder="Enter your first name" />
+            <span id="errorCode" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" id="lName" placeholder="Enter your last name" />
+            <span id="errorCode1" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" placeholder="Enter your email" />
+            <span id="errorCode2" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input
+              type="text"
+              id="number"
+              placeholder="Enter your phone number"
+            />
+            <span id="errorCode3" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+            />
+            <span id="errorCode4" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Guardian Name</span>
+            <input
+              type="text"
+              id="guardian"
+              placeholder="Enter your guardian name"
+            />
+            <span id="errorCode5" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">DOB</span>
+            <input type="date" />
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" id="age" placeholder="Enter your age" />
+            <span id="errorCode8" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Select Date & Time for Class</span>
+            <select id="dateTime">
+              <option value="">Select</option>
+              <option value="baking">10th June 2024 || 9am - 1pm</option>
+              <option value="italian">9th September 2024 || 9am - 1pm</option>
+              <option value="vegetarian">9th December 2024 || 9am - 1pm</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Class Type</span>
+            <select id="meal">
+              <option value="">Select</option>
+              <option value="baking">Baking</option>
+              <option value="italian">Italian Cuisine</option>
+              <option value="vegetarian">Vegetarian</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">No. of Participants</span>
+            <select id="participant">
+              <option value="">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Available Class & Slots</span>
+            <select id="classSlot">
+              <option value="">Select</option>
+              <option value="baking">Baking || 8 slots available</option>
+              <option value="italian">
+                Italian Cuisine || 2 slots available
+              </option>
+              <option value="vegetarian">
+                Vegetarian || 5 slots available
+              </option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <span id="errorCode6" class="errorName"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input
+              type="password"
+              id="rePassword"
+              placeholder="Confirm your password"
+            />
+            <span id="errorCode7" class="errorName"></span>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" />
+          <input type="radio" name="gender" id="dot-2" />
+          <input type="radio" name="gender" id="dot-3" />
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input
+            type="submit"
+            id="submit"
+            onclick="myFunction()"
+            value="Register"
+          />
+        </div>
+      </form>
+
+      <div id="summary"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
